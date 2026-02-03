@@ -1,0 +1,199 @@
+.pollution-info {
+  padding: 6rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================= TITLE ================= */
+
+.section-title {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 0.6rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #475569;
+  margin-bottom: 4.5rem;
+  max-width: 700px;
+}
+
+/* ================= BLOCK ================= */
+
+.info-block {
+  margin-bottom: 5rem;
+}
+
+.info-block h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 2rem;
+}
+
+/* ================= CAUSES ================= */
+
+.cause-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+}
+
+.cause-card {
+  padding: 2.2rem;
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 25px 60px rgba(15, 23, 42, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.cause-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 35px 80px rgba(15, 23, 42, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.percent {
+  display: block;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #2563eb;
+}
+
+.cause-card h4 {
+  font-size: 1.15rem;
+  margin: 0.8rem 0 0.4rem;
+  color: #0f172a;
+}
+
+.cause-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #475569;
+}
+
+/* ================= POLLUTANTS ================= */
+
+.pollutant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.4rem;
+}
+
+.pollutant-item {
+  padding: 1.4rem 1.6rem;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0f172a;
+
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.12);
+}
+
+/* ================= PARAMETERS ================= */
+
+.glass-table {
+  max-width: 650px;
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.1rem 1.6rem;
+  margin-bottom: 0.9rem;
+
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 18px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f172a;
+
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.12);
+}
+
+/* ================= NOTES ================= */
+
+.note {
+  margin-top: 1.6rem;
+  font-size: 0.9rem;
+  color: #64748b;
+  max-width: 500px;
+}
+
+/* ================= DISCLAIMER ================= */
+
+.disclaimer {
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  font-size: 0.95rem;
+  color: #334155;
+
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
+}
+
+
+/* ================= REFERENCES ================= */
+
+.references {
+  padding-top: 2rem;
+  border-top: 1px dashed #cbd5f5;
+}
+
+.references h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.references ul {
+  padding-left: 1.3rem;
+}
+
+.references li {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-bottom: 0.5rem;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .pollution-info {
+    padding: 4rem 1.8rem;
+  }
+
+  .section-title {
+    font-size: 2.1rem;
+  }
+
+  .cause-card {
+    padding: 1.8rem;
+  }
+}
