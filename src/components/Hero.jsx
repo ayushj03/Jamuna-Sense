@@ -11,7 +11,7 @@ const Hero = () => {
         {/* <span className="hero-badge">🌊 Yamuna at a Crossroads</span> */}
 
         <h1>
-          The Yamuna <br /> Deserves Better 💧
+          The Yamuna <br /> Deserves Better!
         </h1>
 
         <p>
