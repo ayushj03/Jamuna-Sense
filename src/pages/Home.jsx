@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import MapSection from "../components/YamunaMap";
 import ReportsSection from "../components/ReportSection";
+import YamunaMap from '../components/YamunaMap';
 import "./Home.css";
 
 const Home = () => {
@@ -12,9 +13,8 @@ const Home = () => {
 
       {/* CONTENT ON TOP */}
       <div className="home-content">
-        <Navbar />
         <Hero />
-
+        <YamunaMap />
         <div className="content">
           {/* <MapSection /> */}
           <ReportsSection />

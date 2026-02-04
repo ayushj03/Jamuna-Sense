@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import KnowYourYamuna from "./pages/KnowYourYamuna";
 import Impact from "./pages/Impact";
@@ -7,10 +8,14 @@ function App() {
 
   return(
     <div>
+      <BrowserRouter>
       <Navbar/>
-      <KnowYourYamuna/>
-      <Impact />
-      {/* <Home/> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/knowyouryamuna" element={<KnowYourYamuna />} />
+          <Route path="/impact" element={<Impact />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
